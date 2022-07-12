@@ -15,7 +15,7 @@ const TodoCard = ({id,text}:props)=>{
 
     return(
         <div className={todoCardClasses}>
-            <p>text</p>
+            <p>{text}</p>
             <div className={'flex items-center gap-[16px]'}>
                 <Button>Done</Button>
                 <Button color={'red'}>DELETE</Button>
