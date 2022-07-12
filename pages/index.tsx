@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Button from "../components/button";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <p className={'text-[20px] text-green-400'}>ss</p>
+      <main className='w-full p-[16px] flex flex-col gap-y-[36px]'>
+        <div className='w-full flex flex-col justify-center items-center gap-y-[4px] text-white'>
+          <p className='text-[36px] font-bold'>TO DO LIST</p>
+          <p className='font-medium text-[18px]'>Create a list of tasks :</p>
+        </div>
+
+          <div>
+              <Button>test</Button>
+          </div>
+      </main>
     </div>
   )
 }
